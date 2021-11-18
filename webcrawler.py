@@ -13,6 +13,7 @@ def blinds_spider(max_pages): # max pages paramater sets how many pages to crawl
         soup = BeautifulSoup(plain_text) # Converts text from webpage into a bs4 object and stores in soup variable. Formats it into bs4 format so it can sift through the links.
 
         # for loop loops through all the source code and picks out the links with the class specified below.
-        for link in soup.findAll('a', {'class': 'Para-sc-1fbc9lw-0 search-tile-title product-title'}): # unique identifier
+        for link in soup.findAll('a', {'class': 'Anchor__styledAnchor-sc-1gq32ow-0 SearchProductTilestyle__SearchProductTileWrapper-sc-7jrh24-2 eePBcM ghAMXK product-tile-main-wrapper'}): # unique identifier
             href = link.get(href)
+            
         
