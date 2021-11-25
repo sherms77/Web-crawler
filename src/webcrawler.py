@@ -9,6 +9,7 @@ def blinds_spider(max_pages): # max pages paramater sets how many pages to crawl
     while page <= max_pages: # while value in page is less than max pages execute loop
         url = 'https://www.bunnings.com.au/search/products?q=venetian%20blinds&sort=BoostOrder&page=' + str(page) # url to crawl. Value from page counter converted to string and added to end of the url to specify page number on site to be crawled.
         source_code = requests.get(url) # Connects to webpage in url variable and stores results in source_code variable.
+        print(source_code) # see output for requests.get()
         plain_text = source_code.text # Takes the text from webpage (stuff required to crawl) and stores it in plain_text variable.
         soup = BeautifulSoup(plain_text, "html.parser") # Converts text from webpage into a bs4 object and stores in soup variable. Formats it into bs4 format so it can sift through the links.
 
@@ -20,11 +21,10 @@ def blinds_spider(max_pages): # max pages paramater sets how many pages to crawl
         page += 1
 
 # 181121: up to 8:14 in video 2
-# 181121: when I run the code nothing happens - no output. It freezes.
 # 181121: debugged it - cannot access url on line 10. Get response 403 error - forbidden client.
 # 181121: see if there is work around for 403 error or use another url.
 
-print('test output')
+# print('test output')
 
 blinds_spider(1)
             
