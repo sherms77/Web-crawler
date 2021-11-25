@@ -10,6 +10,7 @@ def blinds_spider(max_pages): # max pages paramater sets how many pages to crawl
         url = 'https://www.bunnings.com.au/search/products?q=venetian%20blinds&sort=BoostOrder&page=' + str(page) # url to crawl. Value from page counter converted to string and added to end of the url to specify page number on site to be crawled.
         source_code = requests.get(url) # Connects to webpage in url variable and stores results in source_code variable.
         print(source_code) # see output for requests.get()
+        
         plain_text = source_code.text # Takes the text from webpage (stuff required to crawl) and stores it in plain_text variable.
         soup = BeautifulSoup(plain_text, "html.parser") # Converts text from webpage into a bs4 object and stores in soup variable. Formats it into bs4 format so it can sift through the links.
 
