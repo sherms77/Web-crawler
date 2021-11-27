@@ -1,3 +1,4 @@
+from os import name
 import requests # Requests module requests info from a webpage - connects to the webpage.
 from bs4 import BeautifulSoup # BeautifulSoup4 pulls data out of HTML and XML files.
 
@@ -17,8 +18,10 @@ def blinds_spider(max_pages): # max pages paramater sets how many pages to crawl
         # for loop loops through all the source code and picks out the links with the class specified below.
         # refer to uniqueClass.html for info about class.
         for link in soup.findAll('a', {'class': 'Anchor__styledAnchor-sc-1gq32ow-0 SearchProductTilestyle__SearchProductTileWrapper-sc-7jrh24-2 eePBcM ghAMXK product-tile-main-wrapper'}): # unique identifier
-            href = 'https://www.bunnings.com.au' + link.get('href')
+            href = 'https://www.bunnings.com.au' + link.get('href') # Builds out the url for the product.
             print(href)
+            name = link.string # Takes string from within the <a> tags and saves it in name.
+            print(name) # Prints the product names
         page += 1
 
 # 181121: up to 8:14 in video 2
