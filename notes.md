@@ -10,6 +10,7 @@
 - What .text does: https://www.codegrepper.com/code-examples/python/.text+in+python
 
 # Notes - Descending order
+051221: Got this advice (re:403 error) from Amigos code fb group: "Have it print the exact URL it's trying to access and see what happens when you paste that URL into a web browser." - Will try this. Group says might be issues relating to logging in.
 281121: Coded out all the code from video 2. Return to resolving 403 error.
 281121: .text is a method that converts HTML code to text. When you use the output from the .text conversion in a Beautiful soup object, the output for both appears to be the same. 
 Ie: Two lines of code from the webcrawler:
