@@ -8,9 +8,9 @@
 
 # Links
 Tutorial videos:
-- 1.https://www.youtube.com/watch?v=XjNm9bazxn8 
-- 2.https://www.youtube.com/watch?v=sVNJOiTBi_8 
-- 3.https://www.youtube.com/watch?v=pLHejmLB16o&t=601s 
+- 1.[How to build a web crawler 1/3](https://www.youtube.com/watch?v=XjNm9bazxn8)
+- 2.[How to build a web crawler 2/3](https://www.youtube.com/watch?v=sVNJOiTBi_8)
+- 3.[How to build a web crawler 3/3](https://www.youtube.com/watch?v=pLHejmLB16o&t=601s)
 
 # Status
 - Incomplete

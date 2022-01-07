@@ -10,9 +10,10 @@
 - What .text does: https://www.codegrepper.com/code-examples/python/.text+in+python
 
 # Notes - Descending order
+080122: Finished steps 1 and 2 from below. printed url that it's trying to access, which is: https://www.bunnings.com.au/search/products?q=venetian%20blinds&sort=BoostOrder&page=1 - I follow link and I can access the site. However, requests.get cannot access it. I get 403 error. Will now find another site to crawl to release MVP.
 080122: Next steps:
-    1.Get new git token
-    2.Follow advice below - note from 051221
+    1.Get new git token - DONE
+    2.Follow advice below - note from 051221 - DONE
     3.Find different site to crawl to release an MVP
 051221: Got this advice (re:403 error) from Amigos code fb group: "Have it print the exact URL it's trying to access and see what happens when you paste that URL into a web browser." - Will try this. Group says might be issues relating to logging in.
 281121: Coded out all the code from video 2. Return to resolving 403 error.
